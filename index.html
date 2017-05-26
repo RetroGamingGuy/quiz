@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>True and False Quiz</title>
+		<link rel="stylesheet" href="style.css">
+		<script language = "javascript">
+		var score = 0;
+
+		prompt("Are You Ready To Play?");
+
+		function ques1(note){
+
+			if(note == "Three") {
+				alert("CORRECT");
+				score+=1;
+			} else{
+				alert("WRONG! There are 3 colors. Red, white, and Blue");
+				score-=1;
+			}
+		}
+		function ques2(note){
+			if(note == "Stan Lee") {
+				alert("CORRECT");
+				score+=1;
+			} else{
+				alert("WRONG! Stan Lee created the comic company Marvel");
+				score-=1;
+			}
+		}
+		function ques3(note){
+			if(note == "i") {
+				alert("CORRECT");
+				score+=1;
+			} else{
+				alert("WRONG! Apple mobile divices include iphones and ipads and they begin with i");
+				score-=1;
+			}
+		}
+		function ques4(note){
+			if(note == "Sega") {
+				alert("CORRECT");
+				score+=1;
+			} else{
+				alert("WRONG! Sonic is from game company SEGA");
+				score-=1;
+			}
+		}
+		function ques5(note){
+			if(note == "Tonight Show") {
+				alert("CORRECT");
+				score+=1;
+			} else{
+				alert("WRONG! Jimmy Fallon hosts The Tonight Show With Jimmy Fallon");
+				score-=1;
+			}
+		}
+		window.open("http://www.boredbutton.com/random")
+		</script>
+	</head>
+	<body>
+	<p>First Question: How many colors are on the Russian flag?</p>
+	<form>
+		<input name="russia" type="text">
+		<input name="submit" type="button" value="Check Answer" onclick="ques1(form.russia.value)">
+
+	<p>Second Question: Who is the creator of the company Marvel?</p>
+		<input name="marvel" type="text">
+			<input name="submit" type=button value="Check Answer" onclick="ques2(form.
+				marvel.value)">
+	
+	<p>Third Question: Apple phones and tablets usully begin with what letter?</p>
+		<input name="apple" type="text">
+			<input name="submit" type=button value="Check Answer" onclick="ques3(form.
+				apple.value)">
+	
+	<p>Fourth Question: Sonic the Hedgehog a video game character from what game company</p>
+		<input name="sega" type="text">
+			<input name="submit" type=button value="Check Answer" onclick="ques4(form.
+				sega.value)">
+    
+	<p>Last Question: Jimmy Fallon is the host of The _________ With Jimmy Fallon</p>
+		<input name="tonight" type="text">
+			<input name="submit" type=button value="Check Answer" onclick="ques5(form.
+				tonight.value)">	
+	</form>	
+	<form>
+		<input name="total" type="button" value="Score" onclick="alert(score);">
+	</form>
+	<p>Want to play something else?</p>
+	<form>
+		<input name="link" type="button" value="Click Me" onclick="window.open('http://www.boredbutton.com/random')">
+	</form>
+
+
+	</body>
+</html>
